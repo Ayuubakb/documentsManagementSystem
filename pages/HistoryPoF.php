@@ -10,7 +10,7 @@
     <link href="../style/AC.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/2b81570bc8.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="../js/PoF_PDF.js"></script>
+    
     <title>Admin Board</title>
 </head>
 <body>
@@ -65,7 +65,7 @@
                         </div>
                         <div>
                             ".($resultReq[6]==1?"<h2 style='color:green'>Sended</h2>":"<h2 style='color:red'>Refused</h2>")."
-                            <button onclick=\"generatePdf('".$resultReq[1]."','".$resultReq[2]."','".$resultReq[0]."','".$resultReq[4]."')\" style='width:50%;margin-left:0;margin-top: 8px;background-color:black'><i class='fa-solid fa-download fa-xl' style='color: #ffffff;'></i></button>
+                            <a href=\"../php/downloadFile.php?q=demandeatt&l=".$resultReq[2]."&f=".$resultReq[1]."&cne=".$resultReq[0]."&clas=".$resultReq[4]."\"><button style='width:50%;margin-left:0;margin-top: 8px;background-color:black'><i class='fa-solid fa-download fa-xl' style='color: #ffffff;'></i></button></a>
                         </div>
                     </div>
                     ";
