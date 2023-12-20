@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: whitesmoke;
+}
+a{
+    text-decoration: none;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:5px 25px;
+    background-color: rebeccapurple;
+}
+nav .imgContainer{
+    width: 50px;
+    height: 50px;
+}
+nav .imgContainer img{
+    object-fit: contain;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+nav .itemsContainer{
+    width: 50%;
+}
+nav .itemsContainer ul{
+    list-style: none;
+}
+nav .itemsContainer li{
+    float: left;
+    color: white;
+    font-size: 17px;
+    font-family:'Franklin Gothic Medium';
+    padding-inline: 50px;
+    margin-right: 50px;
+}
+nav .itemsContainer li a{
+    text-decoration: none;
+    color: white;
+    padding-inline: 60px;
+    font-size: 17px;
+    font-family:'Franklin Gothic Medium';
+}
+nav .itemsContainer li a{
+    padding-left: 20px;
+}
+nav .itemsContainer .docs{
+    padding-right: 60px;
+}
+nav .itemsContainer .docs{
+    position: relative;
+}
+nav .itemsContainer .docs div{
+    position: absolute;
+    top: 120%;
+    left: -100%;
+    width: 250%;
+    background-color: rgb(32, 32, 32);
+    opacity: 0;
+    transition: ease-out .3s;
+}
+nav .itemsContainer .docs:nth-child(2) div{
+    left: 25%;
+}
+nav .itemsContainer .docs div li{
+    padding-bottom: 10px;
+    padding-top: 10px;
+    float: none;
+    text-align: center;
+    width: 100%;
+    border-bottom:solid 1px #EAE7AF ;
+}
+nav .itemsContainer .docs div a{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 13px;
+    font-family: Tahoma;
+}
+nav .itemsContainer .docs div li:hover{
+    background-color: #EAE7AF;
+}
+nav .itemsContainer .docs div li:hover a{
+    color: rgb(31, 31, 31);
+}
+nav .itemsContainer .docs:hover div{
+    opacity: 1;
+    height: fit-content;
+}
+section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 40px;
+    gap: 25px;
+}
+section .titleContainer{
+    margin-left: 25%;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+    color: #160F30;
+    background-color: #EAE7AF;
+    font-family: 'Trebuchet MS';
+    font-size: 25px;
+}
+section .listsContainer{
+    flex: 1 0 400px;
+}
+section div .headerContainer{
+    background-color: rebeccapurple;
+    color: #EAE7AF;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+section div .headerContainer h1{
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium';
+}
+section div div:last-child{
+    text-align: right;
+    background-color: rebeccapurple;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    color: #EAE7AF;
+    font-family: 'Franklin Gothic Medium';
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 0px 10px 0px black;
+}
+section div .tableContainer{
+    background-color: black;
+    color: #EAE7AF;
+}
+section div .tableContainer table{
+    width: 100%;
+    font-family: Tahoma;
+}
+section div .tableContainer tr:nth-child(even){
+    background-color: #EAE7AF;
+    color: black;
+}
+section div .tableContainer td{
+    padding-left: 15px;
+    border-bottom: solid 1px #EAE7AF;
+}
+section div .tableContainer p{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+footer{
+    padding: 20px;
+    padding-left: 25%;
+    background-color: rebeccapurple;
+    display: grid;
+    grid-template-columns: 150px  auto;
+    grid-template-rows: 150px;
+    margin-top: 100px;
+}
+footer div{
+    text-align: center;
+}
+footer div:nth-child(1) img{
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+    border-radius: 35px;
+    box-shadow: 0px 5px 10px black;
+}
+footer ul{
+    list-style: none;
+}
+footer li{
+    font-size: 18px;
+    color: white;
+    line-height: 55px;
+    font-family: Tahoma;
+}

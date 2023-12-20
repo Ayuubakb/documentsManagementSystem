@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../style/demande.css" rel="stylesheet">
+    <title>Demande</title>
+</head>
+<body>
+    <section id="div1">
+        <h1>Student Request Point</h1>
+        <p id="msg"></p>
+        <div class="formContainer">
+            <form action="" method="POST">
+                <div class="firstInputs slide" id="firstInputs">
+                    <div>
+                        <label for="LN">Last Name :</label>
+                        <input type="text" name="LN" id="LN">
+                    </div>
+                    <div>
+                        <label for="FN">First Name :</label>
+                        <input type="text" name="FN" id="FN">
+                    </div>
+                    <div>
+                        <label for="CNE">CNE :</label>
+                        <input type="text" name="CNE" id="CNE">
+                    </div>
+                    <div>
+                        <label for="AP">N° Appoge:</label>
+                        <input type="text" name="AP" id="AP">
+                    </div>
+                    <div>
+                        <label for="EM">E-mail :</label>
+                        <input type="email" name="EM" id="EM">
+                    </div>
+                    <div>
+                        <label for="FL">Filiere :</label>
+                        <input type="text" name="FL" id="FL">
+                    </div>
+                    <div>
+                        <label>Proof Of Eucation</label>
+                        <input type="radio" name="choix" value="PoE" id="radio1">
+                        <label>Internship Certificate</label>
+                        <input type="radio" name="choix" value="IC" id="radio2">
+                        <label>Academic Transcript</label>
+                        <input type="radio" name="choix" value="AT" id="radio3">
+                    </div>
+                    <div>
+                        <button id="next" name="next" type="button">Next</button>
+                    </div>
+                </div>
+                <div class="otherInputs slide" id="stage">
+                    <div>
+                        <label for="CN">Company Name :</label>
+                        <input type="text" name="LN" id="LN">
+                    </div>
+                    <div>
+                        <label for="CA">Company's address :</label>
+                        <input type="text" name="CA" id="CA">
+                    </div>
+                    <div>
+                        <label for="CPN">Company's Phone Number:</label>
+                        <input type="text" name="CPN" id="CPN">
+                    </div>
+                    <div>
+                        <label for="SupN">Supervisor's name:</label>
+                        <input type="text" name="SupN" id="SupN">
+                    </div>
+                    <div>
+                        <label for="FX">Fax :</label>
+                        <input type="number" name="FX" id="FX">
+                    </div>
+                    <div>
+                        <label for="FoA">Field of activities :</label>
+                        <input type="text" name="FoA" id="FoA">
+                    </div>  
+                    <div>
+                        <button class="goback" type="button">Go back</button>
+                        <button name="submitStage" id="submitStage" type="button">Submit</button>
+                    </div>
+                </div>
+                <div class="otherInputs slide" id="releve">
+                    <div>
+                        <label for="SM">Semestre :</label>
+                        <input type="number" name="SM" id="SM">
+                    </div>
+                    <div>
+                        <label for="AC">Academic Year :</label>
+                        <input type="number" name="AC" id="AC">
+                    </div>  
+                    <div>
+                        <button class="goback" type="button">Go back</button>
+                        <button name="submitReleve" id="submitReleve" type="button">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section id="div2">
+        <img src="../assets/z.png"></img>
+    </section>
+</body>
+<script src="../js/demand.js"></script>
+</html>

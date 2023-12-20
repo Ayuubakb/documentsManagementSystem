@@ -1,0 +1,113 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+p{
+    padding: 2px;
+    background-color: #EAE7AF;
+    color: #A72693;
+    font-family: 'Franklin Gothic Medium';
+    text-align: center;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15%;
+    overflow-x: hidden;
+    background-image: url(../assets/pexels-mudassir-ali-2680270.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section:first-child{
+    width: 40%;
+    margin-left: 10%;
+    margin-top: 50px;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.65);
+    transform: translateX(-150%);
+    transition: ease 0.3s;
+    border: solid 5px #EAE7AF;
+}
+#div2{
+    transform: translateX(150%);
+    transition: ease 0.3s;
+}
+section img{
+    object-fit: contain;
+    width: 70%;
+    height: 70%;
+}
+section h1{
+    color: #EAE7AF;
+    font-size: 40px;
+    font-family:'Franklin Gothic Medium';
+    text-align: center;
+}
+.formContainer{
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
+}
+.formContainer .slide{
+    transition: ease 0.3s;
+}
+.formContainer form{
+    display: flex;
+    flex-direction: row;
+}
+.formContainer form label{
+    color: #EAE7AF;
+    font-family:  Tahoma;
+}
+.formContainer form div{
+    flex: 0 0 100%;
+    padding: 10px;
+}
+.formContainer form div div{
+    display: flex;
+    flex-direction: column;
+}
+.formContainer form .firstInputs div:nth-last-child(2){
+    display: flex;
+    flex-direction: row;
+}
+.formContainer form input[type='radio']{
+    accent-color: black;
+}
+.formContainer form input:not([type='button']){
+    width: 50%;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background-color: #EAE7AF;
+}
+.formContainer  button{
+    width: 25%;
+    margin-left: 70%;
+    padding: 12px 18px;
+    background-color: #A72693;
+    color: whitesmoke;
+    font-family: Tahoma;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.formContainer .otherInputs{
+    display: none;
+}
+.formContainer .otherInputs div:last-child{
+    display: flex;
+    flex-direction: row;
+    margin-top: 57px;
+}
+.formContainer .otherInputs button:first-child{
+    margin-left: 5%;
+}
+.formContainer .otherInputs button:last-child{
+    margin-left: 40%;
+}
+
+

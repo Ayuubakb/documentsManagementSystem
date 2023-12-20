@@ -1,0 +1,195 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+nav{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px 75px;
+    transition: ease 0.3s;
+    box-shadow: 0px 2px 25px rgb(135, 135, 135);
+    z-index: 3;
+}
+nav .imgContainer{
+    width: 75px;
+    height: 75px;
+}
+nav .imgContainer img{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+nav .itemsContainer ul , footer ul{
+    list-style: none;
+}
+nav .itemsContainer li{
+    float: left;
+}
+nav .itemsContainer li a, footer a , footer li{
+    padding-inline: 20px;
+    padding-bottom: 4px;
+    text-decoration: none;
+    color: rgb(23, 23, 96);
+    font-family:'Franklin Gothic Medium';
+    position: relative;
+    font-size: 20px;
+    transition: ease 0.6s;
+}
+nav .itemsContainer li a::after{
+    position: absolute;
+    bottom: 0;
+    left: 12.5%;
+    content: " ";
+    width: 0%;
+    background-color: violet;
+    padding: 0px;
+    transition: ease 0.3s;
+}
+nav .itemsContainer li:hover a::after{
+    width: 75%;
+    padding: 2px;
+}
+.banner1{
+    width: 90vw;
+    margin-left: 5vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 80vh;
+}
+.banner1 .descContainer{
+    flex: 2 0 500px;
+    line-height: 50px;
+}
+.banner1 .descContainer h1{
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium';
+    color: whitesmoke;
+    text-align: center;
+    background-color: blueviolet;
+}
+.banner1 .descContainer p{
+    font-size: 20px;
+    font-family:Tahoma;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.banner1 .descContainer button{
+    border: none;
+    background-color: rgb(23, 23, 96);
+    color: whitesmoke;
+    font-family:'Franklin Gothic Medium';
+    border-radius: 15px;
+    padding: 16px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: ease 0.3s;
+}
+.banner1 .descContainer button:hover{
+    background-color: black;
+}
+.banner1 .imgContainer{
+    flex: 2 0 500px;
+}
+.banner1 .imgContainer img{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+.banner2{
+    background-color: rgba(137, 43, 226, 0.374);
+    min-height: 100vh;
+    padding-top: 40px;
+    padding-bottom: 35px;
+}
+.banner2 .titleContainer{
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 35px;
+    font-family:'Franklin Gothic Medium';
+    color: rgb(0, 0, 0);
+    width: 50%;
+    margin-left: 25%;
+}
+.banner2 .docsWrapper{
+    width: 90%;
+    margin-left: 5%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 450px;
+    gap: 20px;
+}
+.banner2 .docContainer{
+    border-radius: 40px;
+    padding: 10px;
+    position: relative;
+}
+.banner2 .docContainer img{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+.banner2 .docContainer .name{
+    position: absolute;
+    top: 90%;
+    left: 0;
+    height: 10%;
+    width: 100%;
+    border-radius: 35px;
+    opacity: 0.8;
+    transition:ease 0.3s;
+}
+.banner2 .docContainer .name h1{
+    position: absolute;
+    top:50%;
+    left:20%;
+    transform: translateY(-50%);
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium';
+    color: white;
+}
+.banner2 .docContainer:hover .name{
+    top: 0%;
+    opacity: 1;
+    height: 100%;
+}
+.attest{
+    background-color: rgba(137, 43, 226, 0.7);
+}
+.attest2{
+    background-color: rgba(46, 226, 43, 0.7);
+}
+.attest3{
+    background-color: rgba(226, 43, 43, 0.7);
+}
+footer{
+    padding: 25px;
+    background-color: rgb(42, 42, 112);
+    display: grid;
+    grid-template-columns: 40% auto 40%;
+    grid-template-rows: 250px;
+}
+footer div{
+    text-align: center;
+}
+footer div:nth-child(2) img{
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+    border-radius: 35px;
+    box-shadow: 0px 5px 10px black;
+}
+footer li, footer a{
+    font-size: 18px;
+    color: white;
+    line-height: 55px;
+}

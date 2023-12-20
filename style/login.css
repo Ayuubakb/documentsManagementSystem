@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x:hidden ;
+}
+section{
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 75px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+section div{
+    flex: 1 0 350px;
+    transition: ease 0.5s;
+}
+section div:nth-child(2) img{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+.formContainer h1{
+    font-size: 35px;
+    color:rgb(42, 42, 112);
+    margin-bottom: 5px;
+    font-family: 'Franklin Gothic Medium';
+} 
+.formContainer div{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+.formContainer label{
+    font-family:Tahoma ;
+    margin-bottom: 4px;
+}
+.formContainer div input{
+    width: 50%;
+    padding: 10px 7px;
+    background-color: whitesmoke;
+    border: solid 1px rgb(203, 203, 203);
+    border-radius: 5px;
+    outline: none;
+}
+.formContainer button{
+    padding: 10px 28px ;
+    background-color: black;
+    color: whitesmoke;
+    font-size: 15px;
+    border: none;
+    font-family: 'Franklin Gothic Medium';
+    margin-top: 15px;
+    cursor: pointer;
+}
+#div1{
+    transform: translateX(-110%);
+}
+#div2{
+    transform: translateX(140%);
+}
+.errMsg{
+    padding: 5px;
+    color: white;
+    background-color: red;
+    font-family:Tahoma;
+    visibility: hidden;
+    width: 50%;
+    text-align: center;
+    margin-bottom: 30px;
+}

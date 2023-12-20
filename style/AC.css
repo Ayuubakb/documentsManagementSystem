@@ -1,0 +1,171 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:5px 25px;
+    background-color: rebeccapurple;
+}
+nav .imgContainer{
+    width: 50px;
+    height: 50px;
+}
+nav .imgContainer img{
+    object-fit: contain;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+nav .itemsContainer{
+    width: 50%;
+}
+nav .itemsContainer ul{
+    list-style: none;
+}
+nav .itemsContainer li{
+    float: left;
+    color: white;
+    font-size: 17px;
+    font-family:'Franklin Gothic Medium';
+    padding-inline: 50px;
+    margin-right: 50px;
+}
+nav .itemsContainer li a{
+    text-decoration: none;
+    color: white;
+    padding-inline: 60px;
+    font-size: 17px;
+    font-family:'Franklin Gothic Medium';
+}
+nav .itemsContainer li a{
+    padding-left: 20px;
+}
+nav .itemsContainer .docs{
+    padding-right: 60px;
+}
+nav .itemsContainer .docs{
+    position: relative;
+}
+nav .itemsContainer .docs div{
+    position: absolute;
+    top: 120%;
+    left: -100%;
+    width: 250%;
+    background-color: rgb(32, 32, 32);
+    opacity: 0;
+    transition: ease-out .3s;
+}
+nav .itemsContainer .docs:nth-child(2) div{
+    left: 25%;
+}
+nav .itemsContainer .docs div li{
+    padding-bottom: 10px;
+    padding-top: 10px;
+    float: none;
+    text-align: center;
+    width: 100%;
+    border-bottom:solid 1px #EAE7AF ;
+}
+nav .itemsContainer .docs div a{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 13px;
+    font-family: Tahoma;
+}
+nav .itemsContainer .docs div li:hover{
+    background-color: #EAE7AF;
+}
+nav .itemsContainer .docs div li:hover a{
+    color: rgb(31, 31, 31);
+}
+nav .itemsContainer .docs:hover div{
+    opacity: 1;
+    height: fit-content;
+}
+section{
+    width: 90vw;
+    margin-left: 5vw;
+    background-color: whitesmoke;
+    min-height: calc(100vh - 75px);
+}
+.triContainer{
+    width:100%;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #EAE7AF;
+}
+.triContainer p{
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium';
+}
+.triContainer input{
+    background-color: whitesmoke;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    padding: 10px 15px;
+}
+.triContainer select{
+    padding: 10px 15px;
+    border: none;
+    background-color: whitesmoke;
+    border-radius: 15px;
+}
+.demandContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 25px;
+    padding: 10px;
+    padding-bottom: 70px;
+}
+.demandContainer div{
+    background-color: #EAE7AF;
+    flex: 0.5 0 350px;
+    padding-left: 35px;
+    padding-top:10px ;
+    padding-bottom: 10px;
+    border-radius: 15px;
+}
+.demandContainer div button{
+    padding: 15px;
+    border: none;
+    border-radius: 15px;
+    background-color: blueviolet;
+    font-family:Tahoma;
+    cursor: pointer;
+}
+.demandContainer div button:hover{
+    background-color: rgb(177, 8, 177);
+}
+.demandContainer div button:nth-child(2){
+    margin-left: 50px;
+    background-color: rgb(255, 45, 45);
+}
+.demandContainer div button:nth-child(2):hover{
+    background-color: rgb(193, 31, 31);
+}
+.demandContainer div p{
+    color: #2c2c2c;
+    font-size: 15px;
+    font-family: 'Trebuchet MS';
+}
+.demandContainer div span{
+    text-decoration: underline;
+    color: black;
+    font-family: 'Franklin Gothic Medium';
+}
+h2{
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    width: 50%;
+    padding: 3px;
+}
