@@ -128,7 +128,7 @@ if(!strcmp($q,"demanderel")){
     $e="Attestation de frequentation scolaire";
     $pdf->SetFont('Arial','B',16);
     $pdf->Cell(0,10,$e,0,1,'C');
-    $e="Je, soussigne(e) :nomDirecteur";
+    $e="Je, soussigne(e) :Ditecteur ENSATE";
     $pdf->SetFont('Arial','B',8);
     $pdf->Cell(0,10,$e,0,1);
     $e="Agissant en tant que : Directeur de l'ENSA de Tetouan";
