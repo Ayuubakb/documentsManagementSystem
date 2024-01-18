@@ -40,7 +40,7 @@
             </ul>
         </div>
     </nav>
-    <section>
+    <section id='sec'>
         <div class="triContainer">
             <input type="text" name="searchBar" id="searchBar" placeholder="Search...">
             <p id='tableType'>Proof Of Education</p>
@@ -52,7 +52,7 @@
         <div class="demandContainer" id="demandContainer">
             <?php
                 while($resultReq=mysqli_fetch_row($req1_2)){
-                    $fct="\"refuseFct('".$resultReq[2]."','".$resultReq[1]."','".$resultReq[3]."','".$resultReq[5]."')\"";
+                    $fct="\"showBanner('".$resultReq[2]."','".$resultReq[1]."','".$resultReq[3]."','".$resultReq[5]."')\"";
                     $fctSend="\"sendFctPof('".$resultReq[2]."','".$resultReq[1]."','".$resultReq[3]."','".$resultReq[5]."','".$resultReq[0]."','".$resultReq[4]."')\"";
                     echo"
                     <div id='".$resultReq[5]."'>

@@ -20,6 +20,9 @@ $f=$_REQUEST['f'];
 $l=$_REQUEST['l'];
 $em=$_REQUEST['e'];
 $id=$_REQUEST['id'];
+$motif=$_REQUEST['motif'];
+
+$motif="La Cause : ".$motif;
 
 $query="UPDATE ".$q." SET status=2 WHERE id=".$id.";";
 
@@ -54,7 +57,7 @@ try {
     //Content
     $mail->isHTML(true);                                  //Set email format to HTML
     $mail->Subject = 'Refus de document';
-    $mail->Body    = $q;
+    $mail->Body    = nl2br($q."\n".$motif);
 
     $mail->send();
     echo "true";

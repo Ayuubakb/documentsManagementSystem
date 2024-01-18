@@ -41,20 +41,6 @@ selectBar.addEventListener('change',()=>{
     xml.send();
 })
 
-let showBanner=(fname,lname,email,id)=>{
-    let banner=document.createElement('div');
-    banner.classList.add('motifBanner')
-    let div=document.createElement('div');
-    let textArea=document.createElement('textarea');
-    textArea.placeholder='Declining reason...';
-    let button=document.createElement('button');
-    button.innerText='Decline'
-    div.appendChild(textArea)
-    div.appendChild(button)
-    banner.appendChild(div)
-    document.getElementById('sec').appendChild(banner);
-}
-
 let refuseFct=(fname,lname,email,id,motif)=>{
     let xml=new XMLHttpRequest();
     xml.onreadystatechange=()=>{
@@ -66,6 +52,31 @@ let refuseFct=(fname,lname,email,id,motif)=>{
     }
     xml.open("POST","../php/refuseMail.php?q="+type+"&l="+lname+"&f="+fname+"&e="+email+"&id="+id+"&motif="+motif);
     xml.send();
+}
+
+let showBanner=(fname,lname,email,id)=>{
+    let banner=document.createElement('div');
+    banner.classList.add('motifBanner')
+    let croix=document.createElement('i')
+    croix.classList.add("fa-solid")
+    croix.classList.add("fa-x")
+    croix.onclick=()=>{
+        document.getElementById('sec').removeChild(banner)
+    }
+    let div=document.createElement('div');
+    let textArea=document.createElement('textarea');
+    textArea.placeholder='Declining reason...';
+    let button=document.createElement('button');
+    button.innerText='Decline'
+    button.onclick=()=>{
+        refuseFct(fname,lname,email,id,textArea.value)
+        croix.click();
+    }
+    div.appendChild(croix)
+    div.appendChild(textArea)
+    div.appendChild(button)
+    banner.appendChild(div)
+    document.getElementById('sec').appendChild(banner);
 }
 
 let sendFct=(fname,lname,email,id,cne,cn,sn,ca)=>{

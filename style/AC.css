@@ -174,30 +174,43 @@ h2{
 }
 .motifBanner{
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    top: 0%;
+    left: 0%;
+    background-color: rgba(128, 128, 128, 0.395);
+    width: 100%;
+    height: 100vh;
+}
+.motifBanner div{
+    width: 40%;
+    margin-left: 30%;
     background-color: blueviolet;
     border-radius: 15px;
     padding: 15px;
     padding-bottom: 25px;
-}
-.motifBanner div{
-    width: 75%;
-    margin-left: 12.5%;
+    margin-top: 200px;
 }
 .motifBanner textarea{
+    margin-top: 15px;
     margin-bottom: 20px;
     width: 100%;
-    height: 200px;
+    height: 120px;
     outline: none;
     border: none;
     border-radius: 10px;
+    padding: 10px;
 }
 .motifBanner button{
     background-color:white;
-    color: black;
+    color: brown;
     font-family: 'Franklin Gothic Medium';
     font-size: 18px;
-    padding: 8px 12px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.motifBanner i{
+    color: white;
+    float: right;
+    cursor: pointer;
 }
