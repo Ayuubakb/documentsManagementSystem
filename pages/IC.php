@@ -14,7 +14,7 @@
 </head>
 <body>
     <nav>
-        <div class="imgContainer">
+        <div  class="imgContainer">
             <img src="../assets/log.jpg"/>
         </div>
         <div class="itemsContainer">
@@ -41,7 +41,7 @@
             </ul>
         </div>
     </nav>
-    <section>
+    <section id='sec'>
         <div class="triContainer">
             <input type="text" name="searchBar" id="searchBar" placeholder="Search...">
             <p id='tableType'>Internship Certificates</p>
@@ -53,7 +53,7 @@
         <div class="demandContainer" id="demandContainer">
             <?php
                 while($resultReq=mysqli_fetch_row($req3_2)){
-                    $fct="\"refuseFct('".$resultReq[2]."','".$resultReq[1]."','".$resultReq[3]."','".$resultReq[9]."')\"";
+                    $fct="\"showBanner('".$resultReq[2]."','".$resultReq[1]."','".$resultReq[3]."','".$resultReq[9]."')\"";
                     $fctSend="\"sendFct('".$resultReq[2]."','".$resultReq[1]."','".$resultReq[3]."','".$resultReq[9]."','".$resultReq[0]."','".$resultReq[5]."','".$resultReq[8]."','".$resultReq[6]."')\"";
                     echo"
                     <div id='".$resultReq[9]."'>

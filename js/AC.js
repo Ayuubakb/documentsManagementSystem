@@ -41,8 +41,21 @@ selectBar.addEventListener('change',()=>{
     xml.send();
 })
 
+let showBanner=(fname,lname,email,id)=>{
+    let banner=document.createElement('div');
+    banner.classList.add('motifBanner')
+    let div=document.createElement('div');
+    let textArea=document.createElement('textarea');
+    textArea.placeholder='Declining reason...';
+    let button=document.createElement('button');
+    button.innerText='Decline'
+    div.appendChild(textArea)
+    div.appendChild(button)
+    banner.appendChild(div)
+    document.getElementById('sec').appendChild(banner);
+}
 
-let refuseFct=(fname,lname,email,id)=>{
+let refuseFct=(fname,lname,email,id,motif)=>{
     let xml=new XMLHttpRequest();
     xml.onreadystatechange=()=>{
         if(xml.status==200 && xml.readyState==4){
@@ -51,7 +64,7 @@ let refuseFct=(fname,lname,email,id)=>{
             }
         }
     }
-    xml.open("POST","../php/refuseMail.php?q="+type+"&l="+lname+"&f="+fname+"&e="+email+"&id="+id);
+    xml.open("POST","../php/refuseMail.php?q="+type+"&l="+lname+"&f="+fname+"&e="+email+"&id="+id+"&motif="+motif);
     xml.send();
 }
 
