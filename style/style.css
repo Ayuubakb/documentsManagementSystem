@@ -193,3 +193,48 @@ footer li, footer a{
     color: white;
     line-height: 55px;
 }
+.complaintSec .complaintHolder{
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 100px;
+    background-color: blueviolet;
+    border-radius: 20px;
+    box-shadow: -4px 4px 8px violet;
+    padding: 15px;
+    padding-bottom: 25px;
+}
+.complaintSec .complaintHolder div{
+    width: 75%;
+    margin-left: 12.5%;
+    margin-bottom: 25px;
+}
+.complaintSec .complaintHolder input{
+    width: 100%;
+    padding: 8px 12px;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+}
+.complaintSec .complaintHolder button{
+    font-family: 'Franklin Gothic Medium';
+    padding: 8px 12px;
+    border-radius: 10px;
+    border: none;
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    margin-left: 12.5%;
+    cursor: pointer;
+}
+.complaintSec .complaintHolder button:disabled{
+    background-color: gray;
+    color: rgb(82, 81, 81);
+    cursor:auto
+}
+.complaintSec .complaintHolder textarea{
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    padding: 10px;
+    outline: none;
+}
